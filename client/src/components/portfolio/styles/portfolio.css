@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+
+.landing-container {
+  width: 100%;
+  background-color: var(--dark-6);
+  color: white;
+}
+
+/* Landing */
+.content-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  min-height: 75vh;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.land {
+  height: calc(100vh - 80px);
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.content-ctnr {
+  width: 70%;
+}
+
+.content-intro {
+  font-size: 65px;
+}
+
+.content-name {
+  font-size: 65px;
+}
+
+.content-desc {
+  font-size: 24px;
+  color: var(--gray);
+}
+.content-desc span {
+  margin-left: 3%;
+}
+.content-contact {
+  margin: 5% 0;
+}
+.content-contact span {
+  padding: 15px 40px;
+  font-size: 24px;
+  background-color: transparent;
+  border: 1px solid var(--gray-light);
+  color: var(--gray-light);
+  text-decoration: none;
+}
+
+.content-contact a:hover {
+  color: var(--gray);
+  border-color: var(--gray);
+}
+
+.ctnr {
+  padding: 5px 0;
+}
+
+.html-code {
+  color: var(--dark-1);
+  font-family: "Allura", cursive;
+  letter-spacing: 2px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.html-html {
+  margin-left: 3%;
+}
+.body-html {
+  margin-left: 6%;
+}
+.div-html {
+  margin-left: 9%;
+}
+
+/* About */
+.about-container {
+  display: flex;
+  width: 100%;
+}
+.about-content {
+  width: 80%;
+}
+.about-img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+.intro-ctnr {
+  max-width: 90%;
+}
+.intro-header {
+  font-size: 24px;
+  color: var(--light-1);
+  font-weight: 700;
+}
+.intro-desc {
+  font-size: 28px;
+
+  padding-top: 10px;
+}
+.about {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  max-width: 90%;
+  padding-top: 10px;
+}
+.about-desc-container {
+  width: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Skills */
+.section-header {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--gray);
+}
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.skills-card {
+  background-color: var(--white);
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.skills-card span {
+  font-size: 24px;
+  font-weight: 700;
+
+  padding: 5px;
+}
+.skills-card span.active {
+  border-bottom: 1px solid var(--gray-dark);
+}
+.skills-card span.active + .skills-card-content {
+  padding: 10px;
+}
+.skills-card .skills-card-content {
+  overflow: hidden;
+  height: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, calc(calc(100% / 3) - 10px));
+  grid-auto-rows: min-content;
+  gap: 15px;
+  transition: height 0.5s ease;
+}
+
+.skills-card .skills-card-content div {
+  border-bottom: 1px solid var(--gray-dark);
+  height: min-content;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Projects */
+.project-container {
+  max-width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: black;
+  background-color: var(--gray-light);
+  display: flex;
+  border-radius: 10px;
+}
+.project-desc-ctnr {
+  padding: 10px;
+}
+.project-title {
+  font-size: 28px;
+  font-weight: 700;
+  padding: 10px;
+  border-bottom: 2px solid var(--dark-1);
+}
+.project-title a {
+  color: black;
+  text-decoration: none;
+}
+.project-title a:hover {
+  text-decoration: underline;
+}
+.project-desc {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.project-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-items {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+}
+.project-items span {
+  color: var(--light-blue);
+  border: 2px solid var(--light-blue);
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/* Work */
+
+/* Contact */
+.contact-container {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  padding: 20px;
+  background-color: var(--gray-light);
+  border-radius: 10px;
+}
+.contact-container a {
+  color: black;
+}
+.contact-container a:hover {
+  color: var(--dark-1);
+}

@@ -1,0 +1,12 @@
+export { default as dogBed } from "./dog-bed.jpeg";
+export { default as dogCrate } from "./dog-crate.jpg";
+export { default as catTowerFav } from "./cat-tower.jpg";
+export { default as litterBox } from "./litter-box.png";
+export { default as dogTreat } from "./dog-treat.png";
+export { default as dogFood } from "./dog-food.png";
+export { default as catFood } from "./cat-food.jpg";
+export { default as catLitter } from "./cat-litter.jpg";
+export { default as aquarium } from "./aquarium.jpg";
+export { default as reptileEnclosure } from "./reptile-enclosure.jpg";
+export { default as smallAnimalHay } from "./small-animal-hay.jpg";
+export { default as birdFeed } from "./bird-feed.jpg";

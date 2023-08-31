@@ -1,0 +1,30 @@
+:root {
+  --primary: #77d4fc;
+  --secondary: #4b91f1;
+  --secondary-hover: #418af1;
+
+  --black: #000;
+  --gray-1: #181818;
+  --gray-2: #282828;
+  --gray-3: #484848;
+  --gray-4: #585858;
+  --gray-5: #696969;
+  --gray-6: #808080;
+  --gray-7: #a0a0a0;
+  --gray-8: #a9a9a9;
+  --gray-9: #bebebe;
+  --gray-10: #c8c8c8;
+  --gray-11: #d3d3d3;
+  --gray-12: #e0e0e0;
+  --gray-13: #e8e8e8;
+  --gray-14: #f0f0f0;
+  --gray-15: #f5f5f5;
+  --gray-16: #f8f8f8;
+}
+
+.Ctnr {
+  min-height: calc(100vh - 225.8px);
+  max-height: 100%;
+  box-sizing: border-box;
+  display: flex;
+}

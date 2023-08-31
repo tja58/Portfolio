@@ -1,0 +1,280 @@
+:root {
+  --favorite-background: #f7f7f7;
+}
+* {
+  box-sizing: border-box;
+}
+
+.home-ctnr {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  row-gap: 10px;
+}
+
+.home-section-header {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.home-pets,
+.home-essentials,
+.home-rewards,
+.home-pet-favorites,
+.home-services,
+.home-brands,
+.home-resources {
+  padding: 20px 10%;
+  margin-top: 50px;
+}
+
+/* Home Ads */
+/* ------------------------------- */
+.home-ads {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  column-gap: 5%;
+  background-color: var(--gray-14);
+  margin: 10px 40px;
+  border-radius: 5px;
+}
+.home-ads img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.home-ads-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+}
+.home-ads-content h1 {
+  padding: 0;
+  margin: 0;
+  line-height: 32px;
+}
+.home-ads-dis {
+  font-size: 72px;
+  line-height: 72px;
+  font-weight: 800;
+}
+.home-ads-desc {
+  font-size: 20px;
+}
+.home-ads-content button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: var(--secondary);
+  color: white;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Home Pets */
+/* ------------------------------- */
+
+.home-pets-ctnr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+.container {
+  position: relative;
+  width: 80vw;
+  overflow: hidden;
+  transition: 0.5s ease all;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  transition: 0.5s ease all;
+  left: -25%;
+  position: relative;
+}
+
+.left-arrow,
+.right-arrow {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  width: 50px;
+  height: 50px;
+  background: var(--secondary);
+  border-radius: 50%;
+  position: relative;
+}
+
+.child {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.child img {
+  width: 100%;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid var(--secondary);
+}
+.child a {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.child a:hover {
+  text-decoration: underline;
+}
+
+/* Home Essentials */
+/* ------------------------------- */
+
+.home-essential-imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  column-gap: 4%;
+  padding: 20px;
+  background-color: var(--gray-14);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.home-essential-imgs img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border-radius: 5px;
+}
+.essential-container {
+  position: relative;
+}
+.essential-img-text-ctnr {
+  width: max-content;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.essential-img-text {
+  background-color: var(--secondary);
+  padding: 16px 32px;
+  border-radius: 5px;
+}
+.essential-img-text a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+.essential-img-text:hover {
+  background-color: var(--secondary-hover);
+}
+.essential-img-text:hover a {
+  text-decoration: underline;
+}
+.essential-container:hover .essential-img {
+  opacity: 0.5;
+}
+.essential-container:hover .essential-img-text-ctnr {
+  opacity: 1;
+}
+
+/* Home Rewards */
+/* ------------------------------- */
+.home-rewards-ctnr {
+  display: grid;
+  grid-template-columns: max-content auto max-content;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: var(--secondary);
+  color: white;
+  font-size: 24px;
+  border-radius: 5px;
+  gap: 50px;
+}
+.home-rewards-ctnr a {
+  float: right;
+  color: white;
+  text-decoration: none;
+}
+.home-rewards-ctnr a:hover {
+  text-decoration: underline;
+}
+.home-rewards-ctnr div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-rewards-ctnr img {
+  height: 24px;
+}
+
+/* Home Favorites */
+/* ------------------------------- */
+.home-pet-favorites .home-fav-ctnr {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 10px 0px;
+  margin-top: 10px;
+}
+.home-pet-favorites .home-fav-ctnr img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--gray-10);
+}
+.home-fav-img {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-fav-img a {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+.home-fav-img a:hover {
+  text-decoration: underline;
+}
+/* Home Services */
+/* ------------------------------- */
+.home-services {
+}
+
+/* Home Brands */
+/* ------------------------------- */
+.home-brands {
+}
+
+/* Home Resources */
+/* ------------------------------- */
+.home-resources {
+}
