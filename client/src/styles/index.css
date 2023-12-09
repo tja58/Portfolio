@@ -1,4 +1,8 @@
 :root {
+  --primary: #77d4fc;
+  --secondary: #4b91f1;
+  --secondary-hover: #418af1;
+
   --white: #ffffff;
   --gray-light: #f5f5f5;
   --gray-light-2: #ebebeb;
@@ -11,6 +15,11 @@
   --light-blue-2: #243653;
   --blue: #16263e;
   --dark-blue: #0c1727;
+  --blue-1: rgba(21, 30, 47, 1);
+  --blue-2: #15202b;
+  --blue-3: #22303c;
+  --blue-4: #27374d;
+  --blue-5: #334763;
 
   --dark-1: #636363;
   --dark-2: #3b3b3b;
@@ -24,6 +33,23 @@
   --light-3: #d6d6d6;
   --light-4: #ebebeb;
   --light-5: #ffffff;
+
+  --gray-1: #181818;
+  --gray-2: #282828;
+  --gray-3: #484848;
+  --gray-4: #585858;
+  --gray-5: #696969;
+  --gray-6: #808080;
+  --gray-7: #a0a0a0;
+  --gray-8: #a9a9a9;
+  --gray-9: #bebebe;
+  --gray-10: #c8c8c8;
+  --gray-11: #d3d3d3;
+  --gray-12: #e0e0e0;
+  --gray-13: #e8e8e8;
+  --gray-14: #f0f0f0;
+  --gray-15: #f5f5f5;
+  --gray-16: #f8f8f8;
 }
 
 html {
@@ -45,4 +71,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.Ctnr {
+  min-height: calc(100vh - 225.8px);
+  max-height: 100%;
+  box-sizing: border-box;
+  display: flex;
 }

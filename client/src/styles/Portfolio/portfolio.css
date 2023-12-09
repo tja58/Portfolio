@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+
+.landing-container {
+  width: 100%;
+  background-color: var(--dark-6);
+  color: white;
+}
+
+/* Landing */
+.content-container {
+  padding: 100px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  min-height: 75vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.land {
+  height: calc(100vh - 80px);
+  width: 100%;
+  align-items: start;
+  padding: 0px;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.content-ctnr {
+  width: 70%;
+}
+
+.content-intro {
+  font-size: 65px;
+}
+
+.content-name {
+  font-size: 65px;
+}
+
+.content-desc {
+  font-size: 24px;
+  color: var(--gray);
+}
+.content-desc span {
+  margin-left: 3%;
+}
+.content-contact {
+  margin: 5% 0;
+}
+.content-contact span {
+  padding: 15px 40px;
+  font-size: 24px;
+  background-color: transparent;
+  border: 1px solid var(--gray-light);
+  color: var(--gray-light);
+  text-decoration: none;
+}
+
+.content-contact a:hover {
+  color: var(--gray);
+  border-color: var(--gray);
+}
+
+.ctnr {
+  padding: 5px 0;
+}
+
+.html-code {
+  color: var(--dark-1);
+  font-family: "Allura", cursive;
+  letter-spacing: 2px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.html-html {
+  margin-left: 3%;
+}
+.body-html {
+  margin-left: 6%;
+}
+.div-html {
+  margin-left: 9%;
+}
+
+.section-header {
+  width: 40%;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: var(--gray);
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid var(--gray);
+  padding: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sub-header {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: var(--gray);
+}
+
+/* About */
+.about-me-section {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-me {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0% 10%;
+  gap: 10%;
+}
+.intro-ctnr {
+  max-width: 100%;
+}
+.about {
+  max-width: 100%;
+  line-height: 30px;
+}
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 500;
+  display: flex;
+  margin-top: 0;
+}
+.about p span {
+  color: rgb(180, 180, 180);
+  display: contents;
+}
+
+/* Skills */
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.skills-container div {
+  width: auto;
+  padding: 10px 20px;
+  background-color: var(--dark-1);
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Projects */
+
+.project-container {
+  max-width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.project-title {
+  width: 100%;
+  font-size: 28px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.project-desc {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7rem;
+  box-sizing: border-box;
+  color: rgb(124, 124, 124);
+}
+.project-img {
+  height: auto;
+  width: 100%;
+}
+.project-items {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+}
+.project-items span {
+  color: var(--light-blue);
+  border: 2px solid var(--light-blue);
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 5px;
+}
+.project-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.project-links a {
+  width: 50%;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--dark-2);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 0px;
+  margin: 5px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.project-links a:hover {
+  background-color: var(--dark-1);
+}
+
+/* Work */
+
+/* Contact */
+.contact-container {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  padding: 20px;
+  background-color: var(--gray-light);
+  border-radius: 10px;
+}
+.contact-container a {
+  color: black;
+}
+.contact-container a:hover {
+  color: var(--dark-1);
+}
