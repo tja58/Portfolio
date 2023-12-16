@@ -1,0 +1,235 @@
+.landing-container {
+  width: 100%;
+  background-color: var(--dark-6);
+  color: white;
+}
+.p-page {
+  min-height: calc(100vh - 70px);
+}
+.p-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Landing */
+.p-intro-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.p-intro-name-lead {
+  font-size: 1.2rem;
+  animation: TranUp 1s ease 0s 1 normal forwards;
+}
+.p-intro-name {
+  font-size: 4rem;
+  font-weight: 700;
+  animation: TranUp 1.2s ease 0s 1 normal forwards;
+}
+.p-intro-desc {
+  width: 50%;
+  font-size: 1.2rem;
+  color: var(--gray-9);
+  line-height: 1.9rem;
+  animation: TranUp 1.4s ease 0s 1 normal forwards;
+}
+.p-intro-bold {
+  color: white;
+}
+.p-intro-contact {
+  width: max-content;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  animation: TranUp 1.6s ease 0s 1 normal forwards;
+}
+.p-intro-contact:hover {
+  text-decoration: underline;
+}
+@keyframes TranUp {
+  0% {
+    opacity: 0;
+    transform: translateY(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+img {
+  width: 50px;
+}
+
+/* Projects */
+
+.p-projects-ctnr {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20vh 0;
+}
+.p-project-content {
+  max-width: 50%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+.p-project {
+  max-width: 300px;
+  aspect-ratio: 1/1;
+  border: 1px solid var(--dark-1);
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  background-color: var(--gray-1);
+}
+.project-title {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.project-desc {
+  width: 90%;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  color: var(--gray-9);
+}
+
+.project-info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+.project-links {
+  display: flex;
+  gap: 10px;
+}
+
+.project-con {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 10px;
+  text-align: center;
+}
+.project-info a {
+  color: var(--gray-9);
+  text-decoration: none;
+}
+.project-info a:hover {
+  text-decoration: underline;
+}
+/* Contact */
+.p-connect {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.connect-header {
+  font-size: 2.5rem;
+}
+.p-form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+  gap: 10px;
+  box-sizing: border-box;
+}
+.p-form-info {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  box-sizing: border-box;
+}
+.p-form-info input {
+  width: 100%;
+  display: block;
+}
+.p-form input,
+.p-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  resize: none;
+  font-size: 1rem;
+  font-family: Inter;
+  background-color: var(--dark-2);
+  border: 1px solid var(--dark-1);
+}
+.p-form textarea {
+  min-height: 200px;
+}
+.p-form input:focus,
+.p-form textarea:focus {
+  outline: 0;
+  color: white;
+}
+.p-form input::placeholder,
+.p-form textarea::placeholder {
+  color: var(--gray-9);
+}
+
+.p-form-submit {
+  padding: 7px 14px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: max-content;
+  background-color: transparent;
+  border: 2px solid var(--gray-9);
+  color: var(--gray-9);
+  border-radius: 7px;
+  cursor: pointer;
+}
+.p-form-submit:hover {
+  border-color: var(--gray-15);
+  color: var(--gray-15);
+}
+
+/* Socials */
+.p-links-social {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: TransRight 1s ease 0s 1 normal forwards;
+}
+
+.p-links-social i {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+@keyframes TransRight {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

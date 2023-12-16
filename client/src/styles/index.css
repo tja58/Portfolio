@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
 :root {
   --primary: #77d4fc;
   --secondary: #4b91f1;
@@ -61,16 +63,13 @@ body {
   min-height: 100%;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: Inter;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: Inter;
 }
 
 .Ctnr {
@@ -78,4 +77,11 @@ code {
   max-height: 100%;
   box-sizing: border-box;
   display: flex;
+}
+
+#root {
+  position: relative;
+}
+::-webkit-scrollbar {
+  width: 0;
 }
