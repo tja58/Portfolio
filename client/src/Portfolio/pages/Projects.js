@@ -20,8 +20,16 @@ export default function Projects() {
                 <Link>Electron</Link>
               </div>
               <div className="project-links">
-                <Link to="/">Live Demo</Link>
-                <Link to="/">Source Code</Link>
+                <a href="/dbs" target="_blank" rel="noreferrer">
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/atk21009/Senior-Project"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Source Code
+                </a>
               </div>
             </div>
           </div>
@@ -126,6 +134,56 @@ export default function Projects() {
               <div className="project-links">
                 <Link to="/">Live Demo</Link>
                 <Link to="/">Source Code</Link>
+              </div>
+            </div>
+          </div>
+          <div className="p-project">
+            <div className="project-title">Portfolio</div>
+            <div className="project-desc">
+              Explore the coding for this website. All projects have been
+              implemented in a mono repository, and all functionality of the
+              projects are hooked to this website.
+            </div>
+            <div className="project-info">
+              <div className="project-con">
+                <Link>Express</Link>
+                <Link>React</Link>
+                <Link>Electron</Link>
+              </div>
+              <div className="project-links">
+                <Link to="/">Live Demo</Link>
+                <a
+                  href="https://github.com/tja58/Portfolio"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="p-project">
+            <div className="project-title">Certificate Workflow</div>
+            <div className="project-desc">
+              Explore some of the projects created during my study of various
+              computer science and data science certificates. I'm currently
+              working towards various certificates and learning new concepts.
+            </div>
+            <div className="project-info">
+              <div className="project-con">
+                <Link>Express</Link>
+                <Link>React</Link>
+                <Link>Electron</Link>
+              </div>
+              <div className="project-links">
+                <Link to="/">Live Demo</Link>
+                <a
+                  href="https://github.com/tja58/Portfolio"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Source Code
+                </a>
               </div>
             </div>
           </div>

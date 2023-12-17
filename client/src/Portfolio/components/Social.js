@@ -6,14 +6,14 @@ export default function Socials() {
         target="_blank"
         rel="noreferrer"
       >
-        <i class="fa-brands fa-github"></i>
+        <i className="fa-brands fa-github"></i>
       </a>
       <a
         href="https://www.linkedin.com/in/taylor-atkin-2a3b62222/"
         target="_blank"
         rel="noreferrer"
       >
-        <i class="fa-brands fa-linkedin-in"></i>
+        <i className="fa-brands fa-linkedin-in"></i>
       </a>
     </div>
   );

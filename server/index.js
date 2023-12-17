@@ -1,24 +1,38 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const cookieSession = require("cookie-session");
-const passport = require("passport");
 const bodyParser = require("body-parser");
-
-const keys = require("./config/keys");
+const cors = require("cors");
 
 const app = express();
 
-app.use(bodyParser.json());
-app.use(
-  cookieSession({
-    maxAge: 30 * 24 * 60 * 60 * 1000,
-    keys: [keys.cookieKey],
-  })
-);
-app.use(passport.initialize());
-app.use(passport.session());
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
+mongoose.connect(process.env.MONGODB_URI);
 
-require("./routes/serverRoutes")(app);
+app.use(cors());
+app.use(bodyParser.json());
+
+// Portfolio Routes
+require("./routes/portfolioRoutes")(app);
+// DBS Routes
+require("./routes/dbsRoutes/authRoutes")(app);
+require("./routes/dbsRoutes/empRoutes")(app);
+require("./routes/dbsRoutes/orgRoutes")(app);
+require("./routes/dbsRoutes/visitorRoutes")(app);
+
+if (process.env.NODE_ENV === "production") {
+  // Express will serve up production assets
+  // like our main.js or main.css file
+  app.use(express.static("../client/build"));
+
+  // express will serve up the index.html file
+  // if it doesn't recognize the route
+  const path = require("path");
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../client", "build", "index.html"));
+  });
+}
 
 const PORT = process.env.PORT || 5000;
 console.log(PORT);

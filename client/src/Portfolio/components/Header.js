@@ -1,9 +1,10 @@
 import React from "react";
-
+import portrait from "../imgs/portrait.png";
 export default function Header() {
   return (
     <div className="navbar">
-      <div className="nav-title">Taylor.dev</div>
+      <img className="nav-img" src={portrait} alt="Potrait" />
+
       <div className="nav-links">
         <a href="/">Home</a>
         <a href="/#projects">Projects</a>

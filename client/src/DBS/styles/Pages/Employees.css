@@ -1,0 +1,199 @@
+.Emp-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+}
+
+.Emp-title {
+  width: 100%;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--primary-1);
+  padding: 15px;
+  background-color: var(--primary-9);
+  border-radius: 10px;
+  border: 1px solid var(--gray-30);
+  position: relative;
+}
+
+.Emp-create {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 10px;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--primary-1);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+.Emp-create-link {
+  width: max-content;
+  display: none;
+  align-items: center;
+  justify-self: center;
+  gap: 10px;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--primary-1);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px;
+  background-color: var(--primary-9);
+  border-radius: 10px;
+  border: 1px solid var(--gray-30);
+}
+
+.Emp-create i,
+.Emp-create-link i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border: 2px solid var(--primary-1);
+  padding: 3px;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.Emp-create:hover,
+.Emp-create:hover i,
+.Emp-create-link:hover,
+.Emp-create-link:hover i {
+  color: var(--primary-5);
+  border-color: var(--primary-5);
+}
+
+.Emp-card-ctnr {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.Emp-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--primary-1);
+  padding: 15px;
+}
+
+.Emp-card-title {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--primary-1);
+  border: 1px solid var(--gray-30);
+  padding: 10px;
+  background-color: var(--primary-9);
+  border-radius: 10px;
+  position: relative;
+}
+.Emp-card-search {
+  position: absolute;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid var(--gray-30);
+  border-radius: 10px;
+  outline: 0;
+  right: 10px;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.Emp-card-search-ss {
+  display: none;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid var(--gray-30);
+  border-radius: 10px;
+  outline: 0;
+}
+
+.Emp-card-content {
+  max-height: 100%;
+  display: flex;
+  padding: 10px;
+}
+
+.Emp-table {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-radius: 10px;
+  border: 1px solid var(--gray-30);
+  overflow: hidden;
+}
+
+.Emp-table tbody {
+  width: 100%;
+  display: grid;
+  position: relative;
+  border-radius: 10px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.Emp-table-headers {
+  background-color: var(--gray-20);
+  color: var(--primary-9);
+}
+.Emp-table-rows {
+  background-color: var(--primary-9);
+  border-bottom: 1px solid var(--gray-30);
+}
+
+.Emp-table tr {
+  padding: 5px 0px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  width: 100%;
+}
+.Emp-table tr:nth-child(2n) {
+  background-color: var(--gray-36);
+}
+.Emp-table-headers {
+  background-color: var(--gray-20);
+  color: var(--primary-9);
+}
+.Emp-table td,
+.Emp-table th {
+  padding: 5px 10px;
+  border: none;
+  text-align: center;
+}
+
+.Emp-Link {
+  color: var(--primary-1);
+}
+
+/* Emp No data */
+.Emp-no-data {
+  width: 100%;
+  background-color: var(--primary-9);
+  border: 1px solid var(--gray-30);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.Emp-overtime {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  background-color: var(--primary-9);
+  border-radius: 10px;
+  border: 1px solid var(--gray-30);
+}

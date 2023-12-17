@@ -34,7 +34,7 @@ export default function Landing() {
         </div>
         <Projects />
         <Contact />
-        <div>Designed & Created by Taylor Atkin</div>
+        <div className="p-design-info">Designed & Created by Taylor Atkin</div>
       </div>
       <Socials />
     </>
