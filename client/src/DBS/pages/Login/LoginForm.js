@@ -35,6 +35,7 @@ const Login = (props) => {
 
         <form onSubmit={handleSubmit} className="form-login">
           {renderFields()}
+          **For demonstration** Email - w@w.com | Password - 1234567
           <div className="form-field submit">
             <input type="submit" value="Login" />
           </div>
