@@ -33,22 +33,44 @@ export default function Projects() {
               </div>
             </div>
           </div>
-          <div className="p-project">
+          {/* <div className="p-project">
             <div className="project-title">Apps Galore</div>
             <div className="project-desc">Tons of apps, tons of fun.</div>
             <div className="project-info">
               <div className="project-con">
                 <Link>Express</Link>
                 <Link>React</Link>
-                <Link>Electron</Link>
               </div>
               <div className="project-links">
-                <Link to="/">Live Demo</Link>
                 <Link to="/">Source Code</Link>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="p-project">
+            <div className="project-title">Grandpa's Closet</div>
+            <div className="project-desc">
+              This is a freelance e-commerce application designed to sell
+              clothing items. In this application customers can order clothes,
+              and place orders for available products. **This application is
+              currently under development since 1/18/2024**
+            </div>
+            <div className="project-info">
+              <div className="project-con">
+                <Link>Express</Link>
+                <Link>React</Link>
+              </div>
+              <div className="project-links">
+                <a
+                  href="https://github.com/tja58/GrandpasCloset"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* <div className="p-project">
             <div className="project-title">Wrapping Spotify</div>
             <div className="project-desc">
               An app to help you explore new music, and redefine your music
@@ -65,8 +87,8 @@ export default function Projects() {
                 <Link to="/">Source Code</Link>
               </div>
             </div>
-          </div>
-          <div className="p-project">
+          </div> */}
+          {/* <div className="p-project">
             <div className="project-title">Image Wiz 101</div>
             <div className="project-desc">
               Image sharing platform designed at storing, sharing and organizing
@@ -83,8 +105,8 @@ export default function Projects() {
                 <Link to="/">Source Code</Link>
               </div>
             </div>
-          </div>
-          <div className="p-project">
+          </div> */}
+          {/* <div className="p-project">
             <div className="project-title">Picture Perfection</div>
             <div className="project-desc">
               Photography tool designed at helping photographers share photos to
@@ -101,8 +123,8 @@ export default function Projects() {
                 <Link to="/">Source Code</Link>
               </div>
             </div>
-          </div>
-          <div className="p-project">
+          </div> */}
+          {/* <div className="p-project">
             <div className="project-title">AI Channel</div>
             <div className="project-desc">
               Integration of AI, exploring the potentials of AI.
@@ -118,8 +140,8 @@ export default function Projects() {
                 <Link to="/">Source Code</Link>
               </div>
             </div>
-          </div>
-          <div className="p-project">
+          </div> */}
+          {/* <div className="p-project">
             <div className="project-title">Silent Message</div>
             <div className="project-desc">
               Secure messaging app with encryption, security, and other
@@ -136,7 +158,7 @@ export default function Projects() {
                 <Link to="/">Source Code</Link>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="p-project">
             <div className="project-title">Portfolio</div>
             <div className="project-desc">
@@ -162,7 +184,7 @@ export default function Projects() {
               </div>
             </div>
           </div>
-          <div className="p-project">
+          {/* <div className="p-project">
             <div className="project-title">Certificate Workflow</div>
             <div className="project-desc">
               Explore some of the projects created during my study of various
@@ -186,7 +208,7 @@ export default function Projects() {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

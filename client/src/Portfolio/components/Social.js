@@ -9,6 +9,13 @@ export default function Socials() {
         <i className="fa-brands fa-github"></i>
       </a>
       <a
+        href="https://github.com/atk21009?tab=repositories"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <i className="fa-brands fa-github"></i>
+      </a>
+      <a
         href="https://www.linkedin.com/in/taylor-atkin-2a3b62222/"
         target="_blank"
         rel="noreferrer"

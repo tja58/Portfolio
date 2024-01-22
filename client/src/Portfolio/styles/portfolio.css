@@ -85,37 +85,33 @@ img {
   gap: 10px;
 }
 .p-project {
-  max-width: 300px;
-  aspect-ratio: 1/1;
+  height: auto;
+  max-width: 400px;
   border: 1px solid var(--dark-1);
   padding: 15px;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-rows: max-content auto max-content;
   gap: 15px;
   position: relative;
   background-color: var(--gray-4);
 }
 .project-title {
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 500;
 }
 .project-desc {
   width: 90%;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.3rem;
   color: var(--gray-25);
 }
 
 .project-info {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   padding: 10px;
 }
 .project-links {
@@ -220,7 +216,7 @@ img {
   position: fixed;
   top: 50%;
   right: 10px;
-  transform: translateY(-50%);
+  translate: 0 -50%;
   display: flex;
   flex-direction: column;
   gap: 20px;
