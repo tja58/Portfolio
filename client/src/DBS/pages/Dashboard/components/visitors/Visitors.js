@@ -41,7 +41,7 @@ export default function renderVisitors(e) {
                         if (key === "firstname") {
                           return (
                             <td className="visitor-data" key={key}>
-                              <Link to={"/dbs/visitor/" + e._id}>
+                              <Link to={"/visitor/" + e._id}>
                                 {e[key] + " " + e["lastname"]}
                               </Link>
                             </td>

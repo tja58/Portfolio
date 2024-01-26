@@ -8,7 +8,7 @@ import * as actions from "../../store/actions";
 
 import renderOT from "./components/RenderOT";
 import renderEmployees from "./components/RenderEmp";
-import { EmpNoData } from "../../store/utils/NoData";
+import { EmpNoData } from "../../utils/NoData";
 
 class Employees extends Component {
   constructor(props) {
@@ -41,7 +41,7 @@ class Employees extends Component {
                   <></>
                 ) : (
                   <Link
-                    to="/create-employees"
+                    to="/dbs/create-employees"
                     className="Emp-create"
                     key={"emp-create-link"}
                   >
@@ -54,7 +54,7 @@ class Employees extends Component {
                 <></>
               ) : (
                 <Link
-                  to="/create-employees"
+                  to="/dbs/create-employees"
                   className="Emp-create-link"
                   key={"emp-create-link"}
                 >
