@@ -33,19 +33,23 @@ export default function Projects() {
               </div>
             </div>
           </div>
-          {/* <div className="p-project">
-            <div className="project-title">Apps Galore</div>
-            <div className="project-desc">Tons of apps, tons of fun.</div>
+          <div className="p-project">
+            <div className="project-title">Task Manager</div>
+            <div className="project-desc">
+              Erlang server to handle tasks. With this users can add tasks, add
+              task descriptions, complete tasks, and delete tasks
+            </div>
             <div className="project-info">
               <div className="project-con">
-                <Link>Express</Link>
-                <Link>React</Link>
+                <Link>Erlang</Link>
               </div>
               <div className="project-links">
-                <Link to="/">Source Code</Link>
+                <a href="https://github.com/tja58/Erlang-task_manager">
+                  Source Code
+                </a>
               </div>
             </div>
-          </div> */}
+          </div>
           <div className="p-project">
             <div className="project-title">Grandpa's Closet</div>
             <div className="project-desc">
@@ -70,6 +74,19 @@ export default function Projects() {
               </div>
             </div>
           </div>
+          {/* <div className="p-project">
+            <div className="project-title">Apps Galore</div>
+            <div className="project-desc">Tons of apps, tons of fun.</div>
+            <div className="project-info">
+              <div className="project-con">
+                <Link>Express</Link>
+                <Link>React</Link>
+              </div>
+              <div className="project-links">
+                <Link to="/">Source Code</Link>
+              </div>
+            </div>
+          </div> */}
           {/* <div className="p-project">
             <div className="project-title">Wrapping Spotify</div>
             <div className="project-desc">
